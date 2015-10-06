@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/question_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/question_select_check_box"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/create_quiz_question_textview"
+                android:text="What is Bhattarai's Middle Name? "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:text="Java"
+                    android:id="@+id/create_quiz_category_textview"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Difficulty:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_quiz_difficulty_textview"
+                    android:text="Easy"/>
+
+                <Button
+                    android:layout_width="55dip"
+                    android:layout_height="35dip"
+                    android:text="Options"
+                    android:layout_weight="0.25"
+                    android:textSize="8sp"
+                    android:id="@+id/create_quiz_view_options_button"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
